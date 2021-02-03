@@ -2,7 +2,7 @@
 export and import E-Hentai favorites!
 
 ## usage
-to export
+to export:
 ```
 python ehex.py
 ```
