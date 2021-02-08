@@ -6,3 +6,4 @@ if __name__ == "__main__":
     driver.get("https://e-hentai.org/favorites.php")
     username = input("username: ")
     password = getpass("password: ")    
+    del password
