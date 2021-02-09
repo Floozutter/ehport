@@ -7,3 +7,4 @@ if __name__ == "__main__":
     driver.get("https://e-hentai.org/bounce_login.php?b=d&bt=1-6")
     driver.find_element_by_name("UserName").send_keys(input("username: "))
     driver.find_element_by_name("PassWord").send_keys(getpass("password: "))
+    driver.find_element_by_name("ipb_login_submit").click()
