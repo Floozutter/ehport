@@ -8,4 +8,4 @@ if __name__ == "__main__":
     driver.find_element_by_name("UserName").send_keys(input("username: "))
     driver.find_element_by_name("PassWord").send_keys(getpass("password: "))
     driver.find_element_by_name("ipb_login_submit").click()
-    driver.get("https://e-hentai.org/favorites.php")
+    driver.get("https://e-hentai.org/favorites.php?inline_set=fs_f")
