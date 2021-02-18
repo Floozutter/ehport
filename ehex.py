@@ -10,8 +10,8 @@ class Favorite(NamedTuple):
 
 def login(driver, username: str, password: str) -> None:
     driver.get("https://e-hentai.org/bounce_login.php")
-    driver.find_element_by_name("UserName").send_keys(input("username: "))
-    driver.find_element_by_name("PassWord").send_keys(getpass("password: "))
+    driver.find_element_by_name("UserName").send_keys(username)
+    driver.find_element_by_name("PassWord").send_keys(password)
     driver.find_element_by_name("ipb_login_submit").click()
 
 def set_modes(driver) -> None:
