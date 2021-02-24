@@ -24,6 +24,7 @@ def scrape_favorites(session: HTMLSession, page: int) -> tuple[Favorite, ...]:
 if __name__ == "__main__":
     s = HTMLSession()
     login(s, input("username: "), getpass("password: "))
+    s.get(URL_FAV)  # get some more cookies to munch on
     inline_set(s, "fs", "f")  # sort by favorites
     inline_set(s, "dm", "m")  # minimal display mode
     pagecount = scrape_pagecount(s)
