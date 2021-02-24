@@ -1,5 +1,9 @@
 from requests_html import HTMLSession, HTMLResponse
+from enum import Enum
 from typing import NamedTuple
+
+URL_LOGIN = "https://forums.e-hentai.org/index.php?act=Login&CODE=01"
+URL_FAV = "https://e-hentai.org/favorites.php"
 
 class Favorite(NamedTuple):
     gid: str
@@ -14,4 +18,4 @@ def login(session: HTMLSession, username: str, password: str) -> HTMLResponse:
         "b": "d",
         "bt": "1-6",
     }
-    return session.post("https://forums.e-hentai.org/index.php?act=Login&CODE=01", data)
+    return session.post(URL_LOGIN, data)
