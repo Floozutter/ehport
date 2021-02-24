@@ -19,3 +19,7 @@ def login(session: HTMLSession, username: str, password: str) -> HTMLResponse:
         "bt": "1-6",
     }
     return session.post(URL_LOGIN, data)
+
+def pry(filename: str, text: str) -> None:
+    with open(filename, "w", encoding = "utf-8") as f:
+        f.write(text)
