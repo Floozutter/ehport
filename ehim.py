@@ -14,4 +14,4 @@ if __name__ == "__main__":
         for row in reader:
             fav = Favorite(**row)
             print(fav)
-    print("all done. >:3c")
+    print("all imported. >:3c")

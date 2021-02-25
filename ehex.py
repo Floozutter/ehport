@@ -40,4 +40,4 @@ if __name__ == "__main__":
             writer.writerows(map(lambda fav: fav._asdict(), favorites))
             print(f"scraped {len(favorites)} favorites from page {page}.")
             sleep(SECONDS_PER_PAGE)
-    print("all done. >:3c")
+    print("all exported. >:3c")
