@@ -23,7 +23,7 @@ def favorite_favorite(session: HTMLSession, favorite: Favorite) -> HTMLResponse:
             if row.find("div[onclick]")[-1].text == favname:
                 return row.find("input", first = True).attrs["value"]
         return None
-    value = find_value(rows, favorite.color_title)
+    value = find_value(rows, favorite.favname)
     if value is None:
         raise FavNotFoundError
     else:

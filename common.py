@@ -5,14 +5,14 @@ from typing import NamedTuple
 class Favorite(NamedTuple):
     gid: str
     t: str
-    color_title: str
+    favname: str
 
 CSV_FIELDNAMES = Favorite._fields
 class CSV_DIALECT(unix_dialect):
     pass
 
 URL_LOGIN = "https://forums.e-hentai.org/index.php?act=Login&CODE=01"
-URL_FAVS = "https://e-hentai.org/favorites.php"
+URL_FAVORITES = "https://e-hentai.org/favorites.php"
 URL_GALLERYPOPUPS = "https://e-hentai.org/gallerypopups.php"
 
 def login(session: HTMLSession, username: str, password: str) -> HTMLResponse:
