@@ -10,3 +10,6 @@ dmypy.json
 
 # pry
 *.html
+
+# data
+*.csv
