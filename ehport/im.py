@@ -33,7 +33,7 @@ def favorite_favorite(session: HTMLSession, favorite: Favorite) -> HTMLResponse:
         }
         return session.post(URL_GALLERYPOPUPS, params = params, data = data)
 
-if __name__ == "__main__":
+def main() -> None:
     session = HTMLSession()
     login(session, input("username: "), getpass("password: "))
     with open(input("input file: "), mode = "r") as ifile:
@@ -44,3 +44,6 @@ if __name__ == "__main__":
             print(f"[{i}] favorited {favorite}.")
             sleep(SECONDS_PER_FAV)
     print("all imported. >:3c")
+
+if __name__ == "__main__":
+    main()

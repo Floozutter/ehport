@@ -25,7 +25,7 @@ def scrape_favorites(session: HTMLSession, page: int) -> tuple[Favorite, ...]:
         return Favorite(gid, t, favname)
     return tuple(map(parse, rows))
 
-if __name__ == "__main__":
+def main() -> None:
     session = HTMLSession()
     login(session, input("username: "), getpass("password: "))
     session.get(URL_FAVORITES)  # get some more cookies to munch on
@@ -41,3 +41,6 @@ if __name__ == "__main__":
             print(f"[page {page}] scraped {len(favorites)} favorites.")
             sleep(SECONDS_PER_PAGE)
     print("all exported. >:3c")
+
+if __name__ == "__main__":
+    main()
