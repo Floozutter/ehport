@@ -1,4 +1,4 @@
-from common import Favorite, CSV_FIELDNAMES, CSV_DIALECT, URL_FAVORITES, login
+from .common import Favorite, CSV_FIELDNAMES, CSV_DIALECT, URL_FAVORITES, login
 from requests_html import HTMLSession, HTMLResponse
 from urllib.parse import urlparse
 from csv import DictWriter

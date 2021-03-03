@@ -1,4 +1,4 @@
-from common import Favorite, CSV_DIALECT, URL_GALLERYPOPUPS, login
+from .common import Favorite, CSV_DIALECT, URL_GALLERYPOPUPS, login
 from requests_html import HTMLSession, HTMLResponse
 from csv import DictReader
 from time import sleep
