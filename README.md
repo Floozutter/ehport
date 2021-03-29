@@ -2,11 +2,15 @@
 export and import E-Hentai favorites!
 
 ## usage
-to export:
+### install
+```
+poetry install
+```
+### export
 ```
 poetry run python ehex.py
 ```
-to import:
+### import
 ```
 poetry run python ehim.py
 ```
