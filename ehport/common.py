@@ -3,9 +3,9 @@ from csv import unix_dialect
 from typing import NamedTuple
 
 class Favorite(NamedTuple):
-    gid: str
-    t: str
-    favname: str
+    gid: str  # gallery id
+    t: str  # gallery token
+    favname: str  # name of favorite category
 
 CSV_FIELDNAMES = Favorite._fields
 class CSV_DIALECT(unix_dialect):
